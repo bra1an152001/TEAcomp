@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap');
+@import url('../js/main.js');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+:root{   
+   --red:#2980b9;
+   --black:#252a34;
+   --grey:#333;
+   --white:#eaeaea;
+   --title:35px;
+   --text:19px;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+}
+
+/** IMG Header **/
+.img-header{
+    position: relative;
+    height: 100vh;
+    background:url(../img/fondo1.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100vw 100vh;
+}
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    font-family: 'Rampart One', cursive;
+    font-size: calc(1.7em + 1.7vw);
+    color:#fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: calc(2em + 1vw);
+    color: #fff;
+    margin-top: 20px;
+}
+
+/** pictogramas **/
+.picto{
+    width: 100%;
+    margin-top: 20px;
+}
+.picto .picto-title{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.picto .picto-title h2{
+    font-size: 6vw;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-weight: 400;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+.picto .picto-title hr{
+    width: 60%;
+    height: 2px;
+    margin:auto;
+    background: var(--black);
+}
+.picto .box-picto{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.picto .box-picto .card-picto{
+    height: 40%;
+    width: 45%;
+    margin: 13px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all .2s ease 0s;
+}
+
+.picto .box-picto .card-picto:hover{
+    cursor: pointer;
+    background: rgba(223, 230, 233,1.0); 
+}
+.picto .box-picto .card-picto .picto-text h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--red);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: 2s;
+
+}
+.picto .box-picto .card-picto .card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.picto .box-picto .card-picto .card-img img{
+    width: 16em;
+    height: 16em;
+    border-radius: 20%;
+    border: 2px solid #333;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+.picto .box-picto .card-picto .picto-text{
+    min-height: 2em;
+    border: 1px solid black;
+    padding:50px;
+    border-radius: 15px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.picto .box-picto .card-picto .picto-text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 32px;
+    color: var(--black);
+}
+@media only screen and (max-width:670px){
+    .picto .box-picto .card-picto .card-img img{width: 200px; height: 200px;}
+    .picto .box-picto .card-picto{width: 70%;}
+    .picto .box-picto .card-picto .picto-text{min-height: 1px}
+    .picto .box-picto .card-picto .picto-text h4{font-size: 25px;}
+    .picto .box-picto .card-picto .picto-text p{font-size: 17px; line-height: 35px;}
+}
+@media only screen and (max-width:590px){
+    .picto .picto-title h2{font-size: 30px;}
+}
+
+/** Acerca de Nosotros **/
+.acerca-de{
+    width: 100%;
+    margin-bottom: 100px;
+}
+.acerca-de .info-container{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.acerca-de .info-container h1{
+    font-size: 50px;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 20px;
+}
+.acerca-de .info-container hr{
+    width: 40%;
+    height: 2px;
+    margin:auto;
+    background: var(--black);
+}
+.acerca-de .info-container p{
+    text-align: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 20px;
+    color: var(--black);
+    line-height: 35px;
+    margin:10px 0px;
+}
+@media only screen and (max-width:590px){
+    .acerca-de .info-container h1{font-size: 30px;}
+    .acerca-de .info-container p{font-size: 15px;}
+}
+
+@media screen and (width: 980px) {
+
+    .img-header .welcome h1{
+        font-family: 'Rampart One', cursive;
+        font-size: calc(2.6em + 2.6vw);
+        color:#fff;
+        font-weight: 200;
+    }
+    .img-header .welcome hr{
+        width: 820px;
+        height: 2px;
+        border: none;
+        margin-top: 5px;
+    }
+    .img-header .welcome p{
+        font-family: 'Shadows Into Light', cursive;
+        font-size: calc(1.9em + 1.9vw);
+        color: #fff;
+        margin-top: 20px;
+    }
+
+  }

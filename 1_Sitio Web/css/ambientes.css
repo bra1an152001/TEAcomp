@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root{   
+   --blue:#2980b9;
+   --black:#252a34;
+   --grey:#333;
+   --white:#eaeaea;
+   --title:35px;
+   --text:19px;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+}
+
+/** IMG Header **/
+.img-header{
+    position: relative;
+    height: 35vh;
+    background:url('../img/fondoA.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100vw 100vh;
+}
+.img-header .welcome{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.img-header .welcome h1{
+    margin-top: 4.3%;
+    font-size: calc(1.3em + 1.3vw);
+    color:#fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 1px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: calc(0.6em + 0.4vw);
+    color: #fff;
+    margin-top: 20px;
+}
+/** pictogramas **/
+.picto{
+    margin-top: 30px;
+}
+.picto .picto-title{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.picto .picto-title .primer{
+    margin-top: 10px;
+    font-size: 45px;
+    color: var(--black);
+    margin-bottom: 50px;
+}
+.picto .picto-title h2{
+    margin-top: 60px;
+    font-size: 45px;
+    color: var(--black);
+    margin-bottom: 50px;
+}
+.picto .picto-title hr{
+    width: 60%;
+    height: 0px;
+    margin:auto;
+    background: var(--black);
+}
+.picto .box-picto{
+    width: 100vw;
+    margin: 2em auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.picto .box-picto .card-picto .card-img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.picto .box-picto .card-picto .card-img img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    border: 2px solid #333;
+    object-fit: cover;
+}
+.picto .box-picto .card-picto{
+    width: 30%;
+    margin: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .2s ease 0s;
+}
+
+p{
+    font-family: 'Abel', sans-serif;
+    list-style:none;
+    text-align: center;
+    font-size: 1.5em;
+    color: black;
+}
+
+.picto .box-picto .card-picto:hover{
+    cursor: pointer;
+    background: rgba(223, 230, 233,1.0);
+    transition: 0.4s;
+    
+
+}
+.picto .box-picto .card-picto .picto-text{
+    min-height: 2em;
+    border: 2.5px solid var(--blue);
+    padding:35px;
+    border-radius: 34px;
+}
+@media only screen and (max-width:1450px){
+    .picto .box-picto .card-picto .picto-text{min-height: 40px}
+    
+}
+@media only screen and (max-width:700px){
+    .picto .box-picto .card-picto .card-img img{width: 200px; height: 200px;}
+    .picto .box-picto .card-picto{width: 70%;}
+    .picto .box-picto .card-picto .picto-text{min-height: 1px}
+    .picto .box-picto .card-picto .picto-text h4{font-size: 25px;}
+    .picto .box-picto .card-picto .picto-text p{font-size: 17px; line-height: 35px;}
+}
+@media only screen and (max-width:590px){
+    .picto .picto-title h2{font-size: 30px;}
+}
+
+
+
+
+
+/** Imagen Header adaptable a celular **/
+@media (width: 980px) { 
+    .img-header .welcome h1{
+    margin-top: 9%;
+    font-size: calc(1.8em + 1.8vw);
+    color:#fff;
+    font-weight: 200;
+}
+.img-header .welcome hr{
+    width: 400px;
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-top: 5px;
+}
+.img-header .welcome p{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: calc(0.7em + 1vw);
+    color: #fff;
+    margin-top: 20px;
+}
+}
+
