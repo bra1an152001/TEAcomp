@@ -1,151 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Roboto+Mono:ital,wght@1,100&family=Zen+Loop&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-body{
-	background-image: url(fondo20.jpg);
-	position: relative;
-	background-size: 100vw 100vh;
-	background-position: center;
-	background-attachment: fixed;
-	margin: 0;
+
+body {
+    background-image: url(fondo20.jpg);
+    position: relative;
+    background-size: 100vw 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
 }
 
-form{
-	box-shadow:0 0 40px -10px #000;
-	width: 35em;
-	height: 48em;
-	margin: auto;
-	background-color: white;
-	padding: 1.6em 1.6em;
-	box-sizing: border-box;
-	margin-top:5em;
-	border-radius: 5px;
-}
-h2{
-	
-	font-family: 'Rampart One', cursive;
-	color: black;
-	text-align: center;
-	margin: 0.6em;
-	font-size: 63px;
-	margin-bottom: 45px;
+form {
+    box-shadow: 0 0 40px -10px #000;
+    width: 35em;
+    height: 48em;
+    margin: 5em auto;
+    background-color: white;
+    padding: 1.6em;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
-input,textarea{
-	font-family: 'Gowun Dodum', sans-serif;
-	width: 100%;
-	margin-bottom: 30px;
-	padding: 20px;
-	border-radius: 5px;
-	box-sizing: border-box;
-	font-size: 20px;
-	border: 1px solid black;
-}
-textarea{
-	background: white;
-	border: 1px solid black;
-	border-radius: 10px;
-	min-width: 100%;
-	min-height: 100px;
-	max-height: 100px;
-	max-width: 100%;
-	color: black;
-}
-input{
-	background: white;
-	color: black;
-}
-#boton{
-	font-family: 'Rampart One', cursive;
-	box-shadow:0 0 40px -10px #000;
-	background: white;
-	font-size: 30px;
-	color: black;
-	padding: 25px;
-	width: 100%;
-	border-radius: 10px;
-	border: 1.5px solid black;
-
-}
-#boton:hover{
-	cursor: pointer;
-	background: #dcdde1;
-	
+h2 {
+    font-family: 'Rampart One', cursive;
+    color: black;
+    text-align: center;
+    margin: 0.6em 0 45px;
+    font-size: 63px;
 }
 
-@media (width: 980px) { 
-
-
-	body{
-	background-image: url(fondo20.jpg);
-	background-size: 100vw 100vh;
-	margin: 0;
+input, textarea {
+    font-family: 'Gowun Dodum', sans-serif;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: 1px solid black;
+    background: white;
+    color: black;
 }
 
-
-
-form{
-	box-shadow:0 0 40px -10px #000;
-	width: 55em;
-	height: 80em;
-	margin: auto;
-	background-color: white;
-	padding: 1.6em 1.6em;
-	box-sizing: border-box;
-	margin-top:8em;
-	border-radius: 5px;
-}
-h2{
-	
-	font-family: 'Rampart One', cursive;
-	color: black;
-	text-align: center;
-	margin: 0.6em;
-	font-size: 63px;
-	margin-bottom: 45px;
+textarea {
+    min-height: 100px;
+    max-height: 100px;
 }
 
-input,textarea{
-	font-family: 'Gowun Dodum', sans-serif;
-	width: 100%;
-	margin-bottom: 65px;
-	padding: 45px;
-	border-radius: 5px;
-	box-sizing: border-box;
-	font-size: 35px;
-	border: 1px solid black;
-}
-textarea{
-	background: white;
-	border: 1px solid black;
-	border-radius: 10px;
-	min-width: 100%;
-	min-height: 100px;
-	max-height: 200px;
-	max-width: 100%;
-	color: black;
-}
-input{
-	background: white;
-	color: black;
-}
-#boton{
-	font-family: 'Rampart One', cursive;
-	box-shadow:0 0 40px -10px #000;
-	background: white;
-	margin-top: 0px;
-	font-size: 60px;
-	color: black;
-	padding: 35px;
-	width: 100%;
-	border-radius: 10px;
-	border: 1.5px solid black;
-}
-#boton:hover{
-	cursor: pointer;
-	background: #dcdde1;
-	
+#boton {
+    font-family: 'Rampart One', cursive;
+    box-shadow: 0 0 40px -10px #000;
+    background: white;
+    font-size: 30px;
+    color: black;
+    padding: 25px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1.5px solid black;
+    cursor: pointer;
 }
 
+#boton:hover {
+    background: #dcdde1;
+}
 
+@media (max-width: 980px) {
+    body {
+        background-size: cover;
+    }
+
+    form {
+        width: 55em;
+        height: 80em;
+        margin-top: 8em;
+    }
+
+    h2 {
+        font-size: 63px;
+    }
+
+    input, textarea {
+        margin-bottom: 65px;
+        padding: 45px;
+        font-size: 35px;
+    }
+
+    textarea {
+        max-height: 200px;
+    }
+
+    #boton {
+        font-size: 60px;
+        padding: 35px;
+    }
 }
